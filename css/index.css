@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #222;
+  background: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Maven Pro", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.navigation {
+  margin-top: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation a {
+  text-decoration: none;
+}
+.navigation .logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navigation .logo img {
+  width: 32px;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 10px;
+}
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.navigation ul li {
+  padding: 9px 16px;
+}
+.navigation ul li:last-child {
+  margin-right: 0;
+  border: 2px solid #222;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
