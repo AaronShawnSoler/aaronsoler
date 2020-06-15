@@ -1,0 +1,54 @@
+html {
+  font-size: 62.5%;
+  font-family: "Maven Pro", sans-serif;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+h1 {
+  font-size: 6.104rem;
+}
+
+h2 {
+  font-size: 4.883rem;
+}
+
+h3 {
+  font-size: 3.906rem;
+}
+
+h4 {
+  font-size: 3.125rem;
+}
+
+h5 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
+p,
+a {
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+ion-icon {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}

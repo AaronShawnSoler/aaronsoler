@@ -1,0 +1,110 @@
+#hero {
+  display: flex;
+  align-items: center;
+  margin-top: -80px;
+  padding: 0;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+
+  .profile {
+    position: absolute;
+    top: 100px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%), url("../img/profile-pic-square.png");
+    background-size: cover;
+
+    @media (max-width: $desktop) {
+      width: 500px;
+      height: 500px;
+    }
+
+    @media (max-width: $desktop-S) {
+      width: 350px;
+      height: 350px;
+    }
+
+    @media (max-width: $tablet) {
+      position: inherit;
+      margin: 0 auto;
+      margin-top: 100px;
+      background: url("../img/profile-pic-square.png");
+    }
+
+    @media (max-width: $phone) {
+      width: 320px;
+      height: 320px;
+      background-size: cover;
+    }
+  }
+
+  #hero-square {
+    width: 700px;
+    height: 700px;
+    background-color: #262331;
+    margin-left: auto;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $desktop) {
+      width: 700px;
+      height: 700px;
+    }
+
+    @media (max-width: $desktop-S) {
+      width: 500px;
+      height: 500px;
+    }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  .title {
+    position: absolute;
+    margin-left: 430px;
+    max-width: 560px;
+
+    @media (max-width: $desktop) {
+      margin-left: 430px;
+      max-width: 560px;
+    }
+
+    @media (max-width: $desktop-S) {
+      margin-left: 310px;
+      max-width: 442px;
+    }
+
+    @media (max-width: $tablet) {
+      position: inherit;
+      margin-left: 0;
+      padding: 32px 16px;
+      max-width: 320px;
+    }
+
+    .pink-tan {
+      color: #ffac8f;
+    }
+
+    .grey {
+      color: #999;
+    }
+  }
+
+  h1 {
+    margin-bottom: 32px;
+    font-size: 4.883rem;
+
+    @media (max-width: $desktop-S) {
+      font-size: 3.906rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 2.5rem;
+    }
+  }
+}

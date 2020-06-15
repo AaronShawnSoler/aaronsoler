@@ -1,0 +1,48 @@
+#work {
+  .flex-container {
+  }
+  h6 {
+    color: #999;
+  }
+
+  h2 {
+    margin-bottom: 64px;
+  }
+
+  .work-item {
+    padding: 16px 0;
+    width: 362px;
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    h6 {
+      color: #fff;
+      padding: 16px 0;
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: #999;
+    }
+
+    &:nth-child(1) {
+      span {
+        color: #f7a81b;
+      }
+    }
+
+    &:nth-child(2) {
+      span {
+        color: #005dbc;
+      }
+    }
+
+    &:nth-child(3) {
+      span {
+        color: #ba1434;
+      }
+    }
+  }
+}
