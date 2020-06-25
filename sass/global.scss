@@ -3,20 +3,40 @@ body {
   color: #fff;
 }
 
-.container {
-  max-width: 1150px;
-  margin: 0 auto;
+* {
+  box-sizing: border-box;
+}
 
-  @media (max-width: $desktop-S) {
-    max-width: 768px;
-  }
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
 }
 
 section {
-  padding: 64px 0;
+  padding: 64px;
 }
 
 .flex-container {
   display: flex;
   justify-content: space-between;
+}
+
+.pink-tan {
+  color: #ffac8f;
+}
+
+.grey {
+  color: #999;
+}
+
+.blue-bg {
+  background-color: #4639ff;
+}
+
+.pink-tan-bg {
+  background-color: #ffac8f;
+}
+
+.bold {
+  font-weight: 700;
 }

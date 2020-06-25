@@ -1,48 +1,29 @@
 #work {
-  .flex-container {
-  }
-  h6 {
-    color: #999;
-  }
-
   h2 {
-    margin-bottom: 64px;
+    margin-bottom: 100px;
   }
-
-  .work-item {
-    padding: 16px 0;
-    width: 362px;
+  .experience {
+    display: flex;
+    justify-content: space-between;
     img {
       width: 150px;
       height: 150px;
     }
 
-    h6 {
-      color: #fff;
-      padding: 16px 0;
-      font-size: 1.6rem;
+    .item {
+      max-width: 300px;
     }
 
-    p {
-      color: #999;
+    .nyit-color {
+      color: #f7a81b;
     }
 
-    &:nth-child(1) {
-      span {
-        color: #f7a81b;
-      }
+    .ub-color {
+      color: #005dbc;
     }
 
-    &:nth-child(2) {
-      span {
-        color: #005dbc;
-      }
-    }
-
-    &:nth-child(3) {
-      span {
-        color: #ba1434;
-      }
+    .lambda-color {
+      color: #ba1434;
     }
   }
 }

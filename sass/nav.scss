@@ -1,46 +1,23 @@
 nav {
-  height: 80px;
-  margin: 0 64px;
   display: flex;
-  align-items: center;
+  margin-top: 9.5px;
+  padding: 0 32px;
 
-  @media (max-width: $desktop) {
-    margin: 0 64px;
-  }
-
-  @media (max-width: $tablet) {
-    margin: 0 16px;
-  }
-
-  h4 {
-    margin-right: auto;
+  h3 {
+    z-index: 1;
   }
 
   ul {
     display: flex;
-
-    @media (max-width: $tablet) {
-      display: none;
-    }
+    align-items: center;
+    margin-left: auto;
 
     a {
-      padding: 30px 20px;
+      padding: 32px 16px;
+    }
+
+    .contact {
+      background-color: #4639ff;
     }
   }
-
-  button {
-    border: none;
-    background-color: #4639ff;
-    color: #fff;
-    padding: 30px 20px;
-    display: none;
-
-    @media (max-width: $tablet) {
-      display: inherit;
-    }
-  }
-}
-
-.contact {
-  background-color: #4639ff;
 }
