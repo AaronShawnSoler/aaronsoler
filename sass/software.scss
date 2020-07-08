@@ -1,0 +1,61 @@
+#software,
+#hardware {
+  margin-bottom: 128px - 32px;
+
+  .software-item {
+    max-width: 232px;
+    min-width: 232px;
+    margin-right: 16px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    div {
+      background-color: #262331;
+      padding: 8px 16px;
+      margin-top: -3px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 300px;
+    }
+  }
+
+  .carousel {
+    margin-bottom: 80px;
+  }
+
+  .view-my img {
+    width: 66.5px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  h2,
+  h3 {
+    @media (min-width: $mobile-small) {
+      padding-left: 20px;
+    }
+  }
+
+  .carousel {
+    @media (min-width: 768px) {
+      overflow: auto;
+      justify-content: space-evenly;
+    }
+  }
+
+  .carousel-space {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

@@ -2,191 +2,252 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aaron Soler</title>
     <!-- MAVEN PRO FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <!-- NORMALIZE -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- STYLES -->
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav>
-          <h3 class="subheading">Portfolio</h3>
-          <ul class="body-text">
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#" class="contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div id="hero">
-          <div class="profile-pic"></div>
-          <div class="hero-square"></div>
-          <div class="intro">
-            <h1 class="big-title">
-              I'm Aaron <span class="pink-tan">Soler</span>. <br />
-              A Full Stack Developer <br />
-              <span class="grey">based in New York City.</span>
-            </h1>
-            <p class="body-text">I’m very passionate about my craft. If you need someone who’s going to go the extra mile, I’m your guy.</p>
+    <!-- NAV -->
+    <nav>
+      <h3 class="title-1 bold">Portfolio</h3>
+      <ul class="large-nav">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a class="contact" href="#contact">Contact</a></li>
+      </ul>
+      <button>
+        <img src="img/menu-outline.png" alt="menu button" />
+      </button>
+      <div class="mobile-nav display-none">
+        <button>
+          <img src="img/close-outline.png" alt="menu button" />
+        </button>
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#software">Software</a></li>
+          <li><a href="#hardware">Hardware</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- HEADER -->
+    <header>
+      <img src="img/profile_3-4.png" alt="photo of aaron soler" />
+      <div>
+        <h1 class="large-title bold">
+          I'm <span class="blue">Aaron Soler</span>.<br />
+          Full Stack Engineer <br />
+          <span class="grey">
+            based in <br />
+            New York City.
+          </span>
+        </h1>
+        <p class="body-text grey">I’m very passionate about my craft. If you need someone who’s going to go the extra mile, I’m your guy.</p>
+      </div>
+    </header>
+    <!-- WORK -->
+    <section id="work">
+      <h3 class="subhead grey bold">WORK EXPERIENCE</h3>
+      <h2 class="title-1 bold">
+        Places I've worked <br />
+        in the past
+      </h2>
+      <div class="carousel">
+        <div class="work-item">
+          <img src="img/nyit_logo.png" alt="nyit logo" />
+          <p class="headline"><span class="nyit-color">NYIT</span>, Researcher</p>
+          <p class="body-text grey">I was leader for research on autonomous drones and provided the team with a foundation to build onto.</p>
+        </div>
+        <div class="work-item">
+          <img src="img/ub_logo.png" alt="nyit logo" />
+          <p class="headline"><span class="ub-color">UB</span>, Career Services</p>
+          <p class="body-text grey">I was responsible for hosting info sessions for employers and also providing students with opportunities.</p>
+        </div>
+        <div class="work-item">
+          <img src="img/lambda_logo.png" alt="nyit logo" />
+          <p class="headline"><span class="lambda-color">Lambda</span>, Team lead</p>
+          <p class="body-text grey">I collaborated with students to ensure code reviews and coordinated additional support for students.</p>
+        </div>
+        <div class="carousel-space"></div>
+      </div>
+    </section>
+    <!-- VALUES -->
+    <section id="values">
+      <div>
+        <h2 class="title-1 bold">Values</h2>
+        <p class="body-text">
+          I love a good challenge which is why I take initiative to learn something new. I take on projects that will undoubtedly have hurdles for me to overcome but with every hurdle I have to
+          overcome there's a lesson to be learned. I value the process it takes to build amazing things and it teaches me to pay attention to detail.
+        </p>
+      </div>
+      <img src="img/pc_setup.jpg" alt="custom computer with blue lights" />
+    </section>
+    <!-- SOFTWARE -->
+    <section id="software">
+      <h3 class="subhead grey bold">SOFTWARE PROJECTS</h3>
+      <h2 class="title-1 bold">
+        See what I've worked <br />
+        on this past year
+      </h2>
+      <div class="carousel">
+        <div class="software-item">
+          <img src="img/tracker-showcase.png" alt="receipt tracker app" />
+          <div>
+            <p class="headline">Receipt Tracker</p>
+            <p class="body-text grey">Receipt Tracker is a concept that allows a user to take physical receipts and turn it into digital versions.</p>
           </div>
         </div>
-      </header>
-      <section id="work">
-        <h3 class="subheading grey">Work Experience</h3>
-        <h2 class="title">
-          Places I've worked <br />
-          in the past
-        </h2>
-        <div class="experience">
-          <div class="item">
-            <img src="img/nyit_logo.png" alt="NYIT logo" />
-            <p class="body-text bold"><span class="nyit-color">NYIT</span>, Researcher</p>
-            <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus vestibulum ac viverra euismod sodales.</p>
-          </div>
-          <div class="item">
-            <img src="img/ub_logo.png" alt="UB logo" />
-            <p class="body-text bold"><span class="ub-color">University at Buffalo</span>, Career Services</p>
-            <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus vestibulum ac viverra euismod sodales.</p>
-          </div>
-          <div class="item">
-            <img src="img/lambda_logo.png" alt="Lambda logo" />
-            <p class="body-text bold"><span class="lambda-color">Lambda School</span>, Team Lead</p>
-            <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus vestibulum ac viverra euismod sodales.</p>
+        <div class="software-item">
+          <img src="img/airbnb-app.png" alt="airbnb optimal price app" />
+          <div>
+            <p class="headline">Airbnb Optimal Price</p>
+            <p class="body-text grey">Airbnb Optimal Price is an app that helps property owners set a competitive price based off of features.</p>
           </div>
         </div>
-      </section>
-      <section class="showcase blue-bg">
-        <div>
-          <h2 class="title">Philosophy & values</h2>
-          <p class="body-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci dictum at eu ultricies odio at adipiscing gravida a. Faucibus fringilla sed quis at non. Quam aliquet facilisi nisl
-            consectetur ultrices mus aenean. Nunc porttitor eros, non ante aliquet porta. Nam pulvinar dolor.
+        <div class="software-item">
+          <img src="img/lambda_bug_tracker.png" alt="bug tracker app" />
+          <div>
+            <p class="headline">Bug Tracker</p>
+            <p class="body-text grey">Bug Tracker was built to help groups or teams to keep track and prioritize existing bugs within a project.</p>
+          </div>
+        </div>
+        <div class="carousel-space"></div>
+      </div>
+      <div class="view-my">
+        <img src="img/github-logo.png" alt="github logo" />
+        <a class="button-secondary" href="https://github.com/AaronShawnSoler">VIEW MY GITHUB</a>
+      </div>
+    </section>
+    <!-- CRAFTSMANSHIP -->
+    <section id="craftsmanship">
+      <div>
+        <h2 class="title-1 bold">Craftsmanship</h2>
+        <p class="body-text">
+          When it comes to my work I always look for better ways of doing things. Whether its more efficent or best practice I'm very intuitive to the quality of my work. I like for things to not only
+          be beautiful but functional as well. For things to look just as well as it works is true craftsmanship to me and is something I aspire everyday.
+        </p>
+      </div>
+      <img src="img/raul_setup.jpg" alt="custom computer with blue lights" />
+    </section>
+    <!-- HARDWARE -->
+    <section id="hardware">
+      <h3 class="subhead grey bold">HARDWARE PROJECTS</h3>
+      <h2 class="title-1 bold">
+        Work that I've taken <br />
+        initiative to learn
+      </h2>
+      <div class="carousel">
+        <div class="software-item">
+          <img src="img/arduino.png" alt="receipt tracker app" />
+          <div>
+            <p class="headline">LED Music Visualizer</p>
+            <p class="body-text grey">I program an arduino to analyze the amplitude of base frequencies, so when there's more bass in a song the more lit the room gets from the LED strips.</p>
+          </div>
+        </div>
+        <div class="software-item">
+          <img src="img/setup_frank.png" alt="airbnb optimal price app" />
+          <div>
+            <p class="headline">Custom Computers</p>
+            <p class="body-text grey">I started building computers when I was fourteen years old and now I build them for clients who are intrested in high end machines for work or fun.</p>
+          </div>
+        </div>
+        <div class="software-item">
+          <img src="img/drone.png" alt="bug tracker app" />
+          <div>
+            <p class="headline">Racing FPV Drone</p>
+            <p class="body-text grey">I hand picked high performance parts for a racing FPV drone that is capable of 100 MPH and was also the first project that taught me how to solder.</p>
+          </div>
+        </div>
+        <div class="carousel-space"></div>
+      </div>
+      <div class="view-my">
+        <img src="img/construct-outline.png" alt="hammer and wrench" />
+        <a class="button-secondary" href="https://www.linkedin.com/in/aaronsoler/">VIEW ALL PROJECTS</a>
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <section id="services">
+      <h3 class="subhead grey bold">SERVICES</h3>
+      <h2 class="title-1 bold">
+        Hire me to build you <br />
+        amazing things
+      </h2>
+      <div class="carousel">
+        <div class="service-item">
+          <img src="img/eye-outline.png" alt="eye icon" />
+          <p class="headline">Front-End</p>
+          <p class="body-text grey">
+            Developing beautiful and functional websites is my specialty. With my knowledge in stateful singlepage web applications we can build amazing apps that solve real world problems.
           </p>
         </div>
-        <img src="img/pc_setup.jpg" alt="PC setup" />
-      </section>
-      <section id="software" class="project-showcase">
-        <h3 class="subheading grey">Software Projects</h3>
-        <h2 class="title">
-          See what I've worked <br />
-          on this past year
-        </h2>
-        <div class="projects">
-          <div class="left">
-            <div class="project">
-              <img src="img/airbnb-app.png" alt="airbnb app" />
-              <div class="project-desc">
-                <p class="body-text bold">Airbnb Optimal Price</p>
-                <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci dictum at eu ultricies odio at adipiscing gravida a. Faucibus fringilla sed quis at non.</p>
-              </div>
-            </div>
-            <div class="see-more">
-              <ion-icon name="logo-github"></ion-icon>
-              <a href="#" class="bold">VIEW MY GITHUB</a>
-            </div>
-          </div>
-          <div class="right">
-            <div class="project">
-              <img src="img/tracker-showcase.png" alt="airbnb app" />
-              <div class="project-desc">
-                <p class="body-text bold">Receipt Tracker</p>
-                <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci dictum at eu ultricies odio at adipiscing gravida a. Faucibus fringilla sed quis at non.</p>
-              </div>
-            </div>
-            <div class="project">
-              <img src="img/lambda_bug_tracker.png" alt="airbnb app" />
-              <div class="project-desc">
-                <p class="body-text bold">Bug Tracker</p>
-                <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci dictum at eu ultricies odio at adipiscing gravida a. Faucibus fringilla sed quis at non.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="showcase pink-tan-bg">
-        <div>
-          <h2 class="title">Craftsmanship</h2>
-          <p class="body-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci dictum at eu ultricies odio at adipiscing gravida a. Faucibus fringilla sed quis at non. Quam aliquet facilisi nisl
-            consectetur ultrices mus aenean. Nunc porttitor eros, non ante aliquet porta. Nam pulvinar dolor.
+        <div class="service-item">
+          <img src="img/cog-outline.png" alt="eye icon" />
+          <p class="headline">Back-End</p>
+          <p class="body-text grey">
+            Not only do I have skills in developing RESTful APIs but I also know how to develop APIs using GraphQL. Flexibility is key when trying to get our data to our user efficently and
+            effectively.
           </p>
         </div>
-        <img src="img/raul_setup.jpg" alt="PC setup" />
-      </section>
-      <section id="hardware" class="project-showcase">
-        <h3 class="subheading grey">Hardware Projects</h3>
-        <h2 class="title">
-          Work that I've taken <br />
-          initiative to learn
-        </h2>
-        <div class="projects">
-          <div class="left">
-            <div class="project">
-              <img src="img/setup_frank.png" alt="airbnb app" />
-              <div class="project-desc">
-                <p class="body-text bold">Custom Computers</p>
-                <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci dictum at eu ultricies odio at adipiscing gravida a. Faucibus fringilla sed quis at non.</p>
-              </div>
-            </div>
-            <div class="see-more">
-              <ion-icon name="construct"></ion-icon>
-              <a href="#" class="bold">VIEW ALL PROJECTS</a>
-            </div>
-          </div>
-          <div class="right">
-            <div class="project">
-              <img src="img/arduino.png" alt="airbnb app" />
-              <div class="project-desc">
-                <p class="body-text bold">LED Music Visualizer</p>
-                <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci dictum at eu ultricies odio at adipiscing gravida a. Faucibus fringilla sed quis at non.</p>
-              </div>
-            </div>
-            <div class="project">
-              <img src="img/drone.png" alt="airbnb app" />
-              <div class="project-desc">
-                <p class="body-text bold">Racing FPV Drone</p>
-                <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci dictum at eu ultricies odio at adipiscing gravida a. Faucibus fringilla sed quis at non.</p>
-              </div>
-            </div>
-          </div>
+        <div class="service-item">
+          <img src="img/hardware-chip-outline.png" alt="eye icon" />
+          <p class="headline">Computers</p>
+          <p class="body-text grey">
+            With seven years of experience in building custom computers I provide my clients with computer systems that are reliable for any workloads and flexible for future upgrades.
+          </p>
         </div>
-      </section>
-      <section id="services">
-        <h3 class="subheading grey">Services</h3>
-        <h2 class="title">
-          Hire me to build you<br />
-          amazing things
-        </h2>
-        <div class="service-container">
-          <div class="service">
-            <ion-icon class="pink-tan" name="eye-outline"></ion-icon>
-            <h3 class="subheading">Front-End</h3>
-            <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra egestas sit accumsan. Penatibus in leo a mattis vulputate urna, ornare imperdiet sit.</p>
-          </div>
-          <div class="service">
-            <ion-icon class="pink-tan" name="cog-outline"></ion-icon>
-            <h3 class="subheading">Back-End</h3>
-            <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra egestas sit accumsan. Penatibus in leo a mattis vulputate urna, ornare imperdiet sit.</p>
-          </div>
-          <div class="service">
-            <ion-icon class="pink-tan" name="hardware-chip-outline"></ion-icon>
-            <h3 class="subheading">Computers</h3>
-            <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra egestas sit accumsan. Penatibus in leo a mattis vulputate urna, ornare imperdiet sit.</p>
-          </div>
-          <div class="service">
-            <ion-icon class="pink-tan" name="battery-charging-outline"></ion-icon>
-            <h3 class="subheading">Drones</h3>
-            <p class="body-text grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra egestas sit accumsan. Penatibus in leo a mattis vulputate urna, ornare imperdiet sit.</p>
-          </div>
+        <div class="service-item">
+          <img src="img/drone-icon.png" alt="eye icon" />
+          <p class="headline">Drones</p>
+          <p class="body-text grey">
+            Power and durability are top priority for my drones while I utilize hand picked high performance parts that feature the extremely low response times and strong carbon fiber frames.
+          </p>
         </div>
-      </section>
-      <footer></footer>
-    </div>
+        <div class="carousel-space"></div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <h3 class="subhead grey bold">CONTACT</h3>
+      <h2 class="title-1 bold">
+        Want to chat with me?<br />
+        Get in touch!
+      </h2>
+      <div class="social-icons">
+        <div>
+          <a href="https://www.linkedin.com/in/aaronsoler/"><img src="img/logo-linkedin.png" alt="linkedin logo" /></a>
+          <a href="https://www.instagram.com/aaron.soler_/"><img src="img/logo-instagram.png" alt="instagram logo" /></a>
+          <a href="https://twitter.com/TheAaronSoler"><img src="img/logo-twitter.png" alt="twitter logo" /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/channel/UCfvR3ZrRkotTK3yFT2Zl7WQ?view_as=subscriber"><img src="img/logo-youtube.png" alt="youtube logo" /></a>
+          <a href="https://github.com/AaronShawnSoler"><img src="img/logo-github.png" alt="github logo" /></a>
+        </div>
+      </div>
+      <form action="">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="text" name="email" placeholder="Email" />
+        <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+        <input class="button-primary cursor" type="submit" value="SEND MESSAGE" />
+      </form>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <p class="footnote grey">
+        Copyright © 2020 <br />
+        Designed & Developed by Aaron Soler
+      </p>
+    </footer>
+    <script src="js/nav.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>

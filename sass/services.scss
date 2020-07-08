@@ -1,25 +1,64 @@
 #services {
-  h2 {
-    margin-bottom: 100px;
-  }
-  .service-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .service {
-    width: 490px;
-    background-color: #262331;
-    padding: 32px;
+  margin-bottom: 128px - 32px;
+  .service-item {
     text-align: center;
+    min-width: 234px;
+    max-width: 234px;
+    margin-right: 16px;
+    padding: 32px 16px;
+    background-color: #262331;
 
-    ion-icon {
-      font-size: 10rem;
+    &:nth-child(4) {
+      margin-right: 0;
     }
 
-    &:nth-child(1),
+    &:nth-child(1) {
+      @media (min-width: 600px) {
+        margin-bottom: 16px;
+      }
+    }
+
     &:nth-child(2) {
-      margin-bottom: 20px;
+      @media (min-width: 600px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+    }
+
+    img {
+      width: 76px;
+      height: auto;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 600px) {
+      max-width: 48.5%;
+    }
+  }
+
+  h2,
+  h3 {
+    @media (min-width: $mobile-small) {
+      padding-left: 20px;
+    }
+  }
+
+  .carousel {
+    @media (min-width: 600px) {
+      max-width: 680px;
+      margin: 0 auto;
+      overflow: initial;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .carousel-space {
+    @media (min-width: 600px) {
+      display: none;
     }
   }
 }

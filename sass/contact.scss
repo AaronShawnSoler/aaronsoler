@@ -1,0 +1,52 @@
+#contact {
+  margin-bottom: 128px - 32px;
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    img {
+      width: 50px;
+      height: 50px;
+      margin: 16px;
+    }
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    input {
+      border-width: 0;
+      margin-bottom: 16px;
+      padding: 8px 16px;
+      width: 100%;
+      border-radius: 0;
+
+      &:last-child {
+        padding: 16px 0;
+        width: 320px;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px 16px;
+      min-height: 108px;
+      margin-bottom: 32px;
+      border-radius: 0;
+      resize: vertical;
+    }
+
+    @media (min-width: $mobile-small) {
+      padding: 0 20px;
+    }
+  }
+
+  h2,
+  h3 {
+    @media (min-width: $mobile-small) {
+      padding-left: 20px;
+    }
+  }
+}

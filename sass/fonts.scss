@@ -1,0 +1,91 @@
+.container {
+  padding: 0 20px;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Maven Pro", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: black;
+  color: white;
+}
+
+.large-title {
+  font-weight: normal;
+  font-size: 3.4rem;
+  line-height: 4.1rem;
+}
+
+.title-1 {
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+}
+
+.title-2 {
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+
+.title-3 {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.headline {
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+}
+
+.body-text {
+  font-weight: normal;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  max-width: 600px;
+}
+
+.callout {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.subhead {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 32px;
+}
+
+.footnote {
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.caption-1 {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.caption-2 {
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}

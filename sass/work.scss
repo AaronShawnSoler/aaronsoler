@@ -1,29 +1,35 @@
 #work {
-  h2 {
-    margin-bottom: 100px;
+  margin-bottom: 128px - 32px;
+  .work-item {
+    max-width: 232px;
+    min-width: 232px;
+    margin-right: 16px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
   }
-  .experience {
-    display: flex;
-    justify-content: space-between;
-    img {
-      width: 150px;
-      height: 150px;
-    }
+  img {
+    width: 152px;
+  }
 
-    .item {
-      max-width: 300px;
+  h3,
+  h2 {
+    @media (min-width: $mobile-small) {
+      padding-left: 20px;
     }
+  }
 
-    .nyit-color {
-      color: #f7a81b;
+  .carousel {
+    @media (min-width: 768px) {
+      overflow: auto;
+      justify-content: space-evenly;
     }
+  }
 
-    .ub-color {
-      color: #005dbc;
-    }
-
-    .lambda-color {
-      color: #ba1434;
+  .carousel-space {
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 }
