@@ -205,6 +205,14 @@ section {
   max-width: 1000px;
   margin: 0 auto;
 }
+section .body-text:first-of-type {
+  margin-bottom: 32px;
+}
+@media (min-width: 360px) {
+  section .body-text:first-of-type {
+    padding: 0 20px;
+  }
+}
 
 nav {
   height: 68px;

@@ -111,4 +111,11 @@ button:hover {
 section {
   max-width: 1000px;
   margin: 0 auto;
+
+  .body-text:first-of-type {
+    margin-bottom: 32px;
+    @media (min-width: 360px) {
+      padding: 0 20px;
+    }
+  }
 }
