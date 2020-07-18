@@ -1,0 +1,22 @@
+#software {
+  .software-item {
+    margin: 64px 0;
+    img {
+      width: 214px;
+      height: auto;
+    }
+
+    h4 {
+      margin: 16px 0;
+      text-decoration: underline;
+    }
+
+    h5 {
+      margin: 32px 0 16px;
+    }
+
+    P {
+      margin-bottom: 32px;
+    }
+  }
+}

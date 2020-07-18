@@ -1,0 +1,44 @@
+#about {
+  h1 {
+    margin-bottom: 32px;
+  }
+
+  .headline {
+    margin: 16px 0;
+  }
+
+  img {
+    width: 214px;
+    height: auto;
+  }
+
+  p {
+    margin-bottom: 32px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+
+    ion-icon {
+      font-size: 5rem;
+      padding: 16px;
+    }
+
+    .linkedin {
+      color: #2867b2;
+    }
+
+    .instagram {
+      color: #c13584;
+    }
+
+    .twitter {
+      color: #1da1f2;
+    }
+
+    .youtube {
+      color: #ff0000;
+    }
+  }
+}

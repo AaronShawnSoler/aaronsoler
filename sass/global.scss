@@ -1,0 +1,47 @@
+* {
+  text-rendering: optimizeLegibility;
+  font-family: "Maven Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: black;
+  color: #fff;
+}
+
+ion-icon {
+  color: #fff;
+}
+
+.grey-font {
+  color: $grey;
+}
+
+section {
+  padding: 64px 16px;
+
+  h2 {
+    margin-bottom: 32px;
+  }
+}
+
+.primary-button,
+.secondary-button {
+  padding: 16px 0;
+  border: 1px solid $profile-orange;
+  margin: 16px 0;
+}
+
+.primary-button {
+  display: block;
+  text-align: center;
+  background-color: $profile-orange;
+}
+
+.secondary-button {
+  display: block;
+  text-align: center;
+}
