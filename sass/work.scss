@@ -1,0 +1,21 @@
+#work {
+  .work-item {
+    margin-bottom: 64px;
+    img {
+      width: 140px;
+      height: auto;
+    }
+
+    h5 {
+      margin: 16px 0;
+    }
+
+    span {
+      font-weight: 500;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

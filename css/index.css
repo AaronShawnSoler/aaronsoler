@@ -216,22 +216,59 @@ header h1 {
   margin-bottom: 32px;
 }
 
-#software .software-item {
+.software-item,
+.hardware-item {
   margin: 64px 0;
 }
-#software .software-item img {
+.software-item img,
+.hardware-item img {
   width: 214px;
   height: auto;
 }
-#software .software-item h4 {
+.software-item h4,
+.hardware-item h4 {
   margin: 16px 0;
   text-decoration: underline;
 }
-#software .software-item h5 {
+.software-item h5,
+.hardware-item h5 {
   margin: 32px 0 16px;
 }
-#software .software-item P {
+.software-item P,
+.hardware-item P {
   margin-bottom: 32px;
+}
+.software-item P:last-child,
+.hardware-item P:last-child {
+  margin: 0;
+}
+
+.software-item:last-child,
+.hardware-item:last-child {
+  margin-bottom: 0;
+}
+
+#work .work-item {
+  margin-bottom: 64px;
+}
+#work .work-item img {
+  width: 140px;
+  height: auto;
+}
+#work .work-item h5 {
+  margin: 16px 0;
+}
+#work .work-item span {
+  font-weight: 500;
+}
+#work .work-item:last-child {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #262331;
+  padding: 32px 0;
 }
 
 /*# sourceMappingURL=index.css.map */
