@@ -22,16 +22,22 @@ ion-icon {
 
 section {
   padding: 64px 16px;
+  max-width: 640px;
+  margin: 0 auto;
 }
 section h2 {
   margin-bottom: 32px;
+}
+section p {
+  max-width: 500px;
 }
 
 .primary-button,
 .secondary-button {
   padding: 16px 0;
   border: 1px solid #ffb539;
-  margin: 16px 0;
+  margin: 16px auto;
+  width: 288px;
 }
 
 .primary-button {
@@ -45,12 +51,25 @@ section h2 {
   text-align: center;
 }
 
-* {
-  font-weight: 400;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-p {
-  max-width: 500px;
+.nyit-font {
+  color: #f7a81b;
+}
+
+.ub-font {
+  color: #005dbc;
+}
+
+.lambda-font {
+  color: #ec3944;
+}
+
+* {
+  font-weight: 400;
 }
 
 .bold-title {
@@ -143,10 +162,16 @@ ul {
   padding-left: 20px;
 }
 
+p {
+  max-width: 500px;
+}
+
 nav {
   display: flex;
   align-items: center;
   padding: 0 16px;
+  max-width: 640px;
+  margin: 0 auto;
 }
 nav button {
   margin-left: auto;
@@ -160,16 +185,20 @@ nav button {
 header {
   padding: 0 16px;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: -66px;
+  margin-top: -82px;
   background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%), url("../img/pc_setup.jpg");
   background-size: cover;
   background-position: center;
 }
 header h1 {
   margin: 16px 0;
+}
+header div {
+  max-width: 608px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #about h1 {
@@ -185,13 +214,33 @@ header h1 {
 #about p {
   margin-bottom: 32px;
 }
+#about .flex-container {
+  justify-content: center;
+}
+@media (min-width: 442px) {
+  #about .flex-container {
+    justify-content: left;
+    margin: 0;
+  }
+}
+@media (min-width: 442px) {
+  #about .primary-button,
+#about .secondary-button {
+    margin: 16px 0;
+  }
+}
+@media (min-width: 442px) {
+  #about .primary-button {
+    margin-right: 32px;
+  }
+}
 #about .social-icons {
   display: flex;
   justify-content: center;
 }
 #about .social-icons ion-icon {
   font-size: 5rem;
-  padding: 16px;
+  margin: 16px;
 }
 #about .social-icons .linkedin {
   color: #2867b2;
@@ -205,6 +254,11 @@ header h1 {
 #about .social-icons .youtube {
   color: #ff0000;
 }
+@media (min-width: 442px) {
+  #about .social-icons:first-child ion-icon:first-child {
+    margin-left: 0;
+  }
+}
 
 #skills h2 {
   margin-bottom: 16px;
@@ -214,11 +268,19 @@ header h1 {
 }
 #skills .skill-item {
   margin-bottom: 32px;
+  width: 288px;
+}
+@media (min-width: 500px) {
+  #skills .skill-item:nth-child(1),
+#skills .skill-item:nth-child(3) {
+    margin-right: 32px;
+  }
 }
 
 .software-item,
 .hardware-item {
-  margin: 64px 0;
+  margin-bottom: 64px;
+  width: 288px;
 }
 .software-item img,
 .hardware-item img {
@@ -243,12 +305,28 @@ header h1 {
   margin: 0;
 }
 
+@media (min-width: 500px) {
+  .software-item:nth-child(1),
+.software-item:nth-child(3),
+.hardware-item:nth-child(1),
+.hardware-item:nth-child(3) {
+    margin-right: 32px;
+  }
+}
+
+@media (min-width: 500px) {
+  .software-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+
 .software-item:last-child,
 .hardware-item:last-child {
   margin-bottom: 0;
 }
 
 #work .work-item {
+  width: 288px;
   margin-bottom: 64px;
 }
 #work .work-item img {
@@ -264,11 +342,20 @@ header h1 {
 #work .work-item:last-child {
   margin: 0;
 }
+@media (min-width: 500px) {
+  #work .work-item:nth-child(1),
+#work .work-item:nth-child(3) {
+    margin-right: 32px;
+  }
+}
 
 footer {
   text-align: center;
   background-color: #262331;
   padding: 32px 0;
+}
+footer p {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.css.map */

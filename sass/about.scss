@@ -16,13 +16,34 @@
     margin-bottom: 32px;
   }
 
+  .flex-container {
+    justify-content: center;
+    @media (min-width: 442px) {
+      justify-content: left;
+      margin: 0;
+    }
+  }
+
+  .primary-button,
+  .secondary-button {
+    @media (min-width: 442px) {
+      margin: 16px 0;
+    }
+  }
+
+  .primary-button {
+    @media (min-width: 442px) {
+      margin-right: 32px;
+    }
+  }
+
   .social-icons {
     display: flex;
     justify-content: center;
 
     ion-icon {
       font-size: 5rem;
-      padding: 16px;
+      margin: 16px;
     }
 
     .linkedin {
@@ -39,6 +60,14 @@
 
     .youtube {
       color: #ff0000;
+    }
+
+    &:first-child {
+      ion-icon:first-child {
+        @media (min-width: 442px) {
+          margin-left: 0;
+        }
+      }
     }
   }
 }

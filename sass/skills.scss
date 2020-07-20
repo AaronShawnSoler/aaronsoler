@@ -9,5 +9,13 @@
 
   .skill-item {
     margin-bottom: 32px;
+    width: 288px;
+  }
+
+  .skill-item:nth-child(1),
+  .skill-item:nth-child(3) {
+    @media (min-width: 500px) {
+      margin-right: 32px;
+    }
   }
 }

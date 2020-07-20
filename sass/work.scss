@@ -1,5 +1,6 @@
 #work {
   .work-item {
+    width: 288px;
     margin-bottom: 64px;
     img {
       width: 140px;
@@ -16,6 +17,13 @@
 
     &:last-child {
       margin: 0;
+    }
+  }
+
+  .work-item:nth-child(1),
+  .work-item:nth-child(3) {
+    @media (min-width: 500px) {
+      margin-right: 32px;
     }
   }
 }

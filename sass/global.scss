@@ -22,9 +22,15 @@ ion-icon {
 
 section {
   padding: 64px 16px;
+  max-width: 640px;
+  margin: 0 auto;
 
   h2 {
     margin-bottom: 32px;
+  }
+
+  p {
+    max-width: 500px;
   }
 }
 
@@ -32,7 +38,8 @@ section {
 .secondary-button {
   padding: 16px 0;
   border: 1px solid $profile-orange;
-  margin: 16px 0;
+  margin: 16px auto;
+  width: 288px;
 }
 
 .primary-button {
@@ -44,4 +51,21 @@ section {
 .secondary-button {
   display: block;
   text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nyit-font {
+  color: #f7a81b;
+}
+
+.ub-font {
+  color: #005dbc;
+}
+
+.lambda-font {
+  color: #ec3944;
 }

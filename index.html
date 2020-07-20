@@ -19,13 +19,15 @@
       <button><ion-icon name="menu-outline"></ion-icon></button>
     </nav>
     <header>
-      <h1 class="bold-title">
-        Full Stack <br />
-        Web Developer <br />
-        based in <br />
-        New York City.
-      </h1>
-      <p class="body-text grey-font">I’m very passionate about my craft. If you need someone who’s going to go the extra mile, I’m your guy.</p>
+      <div>
+        <h1 class="bold-title">
+          Full Stack <br />
+          Web Developer <br />
+          based in <br />
+          New York City.
+        </h1>
+        <p class="body-text grey-font">I’m very passionate about my craft. If you need someone who’s going to go the extra mile, I’m your guy.</p>
+      </div>
     </header>
     <section id="about">
       <h3 class="subhead">ABOUT</h3>
@@ -36,9 +38,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ullamcorper libero mi scelerisque duis. Vitae interdum viverra massa arcu, sit cursus viverra urna, vestibulum. Iaculis congue
         molestie nec dictum quam. Diam cursus sed gravida vitae. Eget interdum urna.
       </p>
-      <a class="primary-button" href="#">Download CV</a>
-      <a class="secondary-button" href="#">Send Email</a>
-      <div>
+      <div class="flex-container">
+        <a class="primary-button" href="#">Download CV</a>
+        <a class="secondary-button" href="#">Send Email</a>
+      </div>
+      <div class="flex-container">
         <div class="social-icons">
           <ion-icon class="linkedin" name="logo-linkedin"></ion-icon>
           <ion-icon class="instagram" name="logo-instagram"></ion-icon>
@@ -52,146 +56,184 @@
     </section>
     <section id="skills">
       <h3 class="subhead">SKILLS</h3>
-      <h2 class="title-1">Work that I’ve taken initiative to learn.</h2>
+      <h2 class="title-1">
+        Work that I’ve taken <br />
+        initiative to learn.
+      </h2>
       <p class="body-text grey-font">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ullamcorper libero mi scelerisque duis. Vitae interdum viverra massa arcu, sit cursus viverra urna, vestibulum. Iaculis congue
         molestie nec dictum quam. Diam cursus sed gravida vitae. Eget interdum urna.
       </p>
-      <div class="skill-item">
-        <h4 class="title-2">Front-End</h4>
-        <ul class="grey-font">
-          <li>HTML, CSS, JavaScript</li>
-          <li>Styling preprocessors LESS/SASS</li>
-          <li>React single page applicaitons</li>
-          <li>Client side routing</li>
-          <li>Form management / validation</li>
-          <li>Testing</li>
-        </ul>
-      </div>
-      <div class="skill-item">
-        <h4 class="title-2">Back-End</h4>
-        <ul class="grey-font">
-          <li>Node.js</li>
-          <li>RESTful / GraphQL APIs</li>
-          <li>Express.js</li>
-          <li>Authorization with JWT / Cookies</li>
-          <li>Relational database schemas</li>
-          <li>SQL Queries</li>
-        </ul>
-      </div>
-      <div class="skill-item">
-        <h4 class="title-2">Computers</h4>
-        <ul class="grey-font">
-          <li>Hardware assembly</li>
-          <li>OS installments</li>
-          <li>Troubleshoot hardware failures</li>
-          <li>High performance overclocking</li>
-          <li>System upgrades</li>
-          <li>Build systems for ideal workloads</li>
-        </ul>
-      </div>
-      <div class="skill-item">
-        <h4 class="title-2">Drones</h4>
-        <ul class="grey-font">
-          <li>Up to 6s LIPO batteries</li>
-          <li>Durable carbon fiber frames</li>
-          <li>ESC protocals using Dshot1200</li>
-          <li>ESC tuning with betaflight</li>
-          <li>Radio communications</li>
-          <li>Heat resistant silicone wiring</li>
-        </ul>
+      <div class="flex-container">
+        <div class="skill-item">
+          <h4 class="title-2">Front-End</h4>
+          <ul class="grey-font">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Styling preprocessors LESS/SASS</li>
+            <li>React single page applicaitons</li>
+            <li>Client side routing</li>
+            <li>Form management / validation</li>
+            <li>Testing</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h4 class="title-2">Back-End</h4>
+          <ul class="grey-font">
+            <li>Node.js</li>
+            <li>RESTful / GraphQL APIs</li>
+            <li>Express.js</li>
+            <li>Authorization with JWT / Cookies</li>
+            <li>Relational database schemas</li>
+            <li>SQL Queries</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h4 class="title-2">Computers</h4>
+          <ul class="grey-font">
+            <li>Hardware assembly</li>
+            <li>OS installments</li>
+            <li>Troubleshoot hardware failures</li>
+            <li>High performance overclocking</li>
+            <li>System upgrades</li>
+            <li>Build systems for ideal workloads</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h4 class="title-2">Drones</h4>
+          <ul class="grey-font">
+            <li>Up to 6s LIPO batteries</li>
+            <li>Durable carbon fiber frames</li>
+            <li>ESC protocals using Dshot1200</li>
+            <li>ESC tuning with betaflight</li>
+            <li>Radio communications</li>
+            <li>Heat resistant silicone wiring</li>
+          </ul>
+        </div>
       </div>
     </section>
     <section id="software">
       <h3 class="subhead">SOFTWARE</h3>
-      <h2 class="title-1">See what I’ve worked on this past year.</h2>
-      <div class="software-item">
-        <img src="img/tracker-showcase.png" alt="tracker marketing page" />
-        <a href="#"><h4 class="title-2">Receipt Tracker</h4></a>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
-        <h5 class="headline">Tech Stack</h5>
-        <ul class="grey-font">
-          <li>React</li>
-          <li>Redux</li>
-          <li>Express</li>
-          <li>SQL</li>
-        </ul>
-        <h5 class="headline">Responsibilities</h5>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
-        <a class="secondary-button" href="#">GIT Repo</a>
-      </div>
-      <div class="software-item">
-        <img src="img/tracker-showcase.png" alt="tracker marketing page" />
-        <a href="#"><h4 class="title-2">Receipt Tracker</h4></a>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
-        <h5 class="headline">Tech Stack</h5>
-        <ul class="grey-font">
-          <li>React</li>
-          <li>Redux</li>
-          <li>Express</li>
-          <li>SQL</li>
-        </ul>
-        <h5 class="headline">Responsibilities</h5>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
-        <a class="secondary-button" href="#">GIT Repo</a>
-      </div>
-      <div class="software-item">
-        <img src="img/tracker-showcase.png" alt="tracker marketing page" />
-        <a href="#"><h4 class="title-2">Receipt Tracker</h4></a>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
-        <h5 class="headline">Tech Stack</h5>
-        <ul class="grey-font">
-          <li>React</li>
-          <li>Redux</li>
-          <li>Express</li>
-          <li>SQL</li>
-        </ul>
-        <h5 class="headline">Responsibilities</h5>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
-        <a class="secondary-button" href="#">GIT Repo</a>
+      <h2 class="title-1">
+        See what I’ve worked <br />
+        on this past year.
+      </h2>
+      <div class="flex-container">
+        <div class="software-item">
+          <img src="img/tracker-showcase.png" alt="tracker marketing page" />
+          <a href="#"><h4 class="title-2">Receipt Tracker</h4></a>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+          <h5 class="headline">Tech Stack</h5>
+          <ul class="grey-font">
+            <li>React</li>
+            <li>Redux</li>
+            <li>Express</li>
+            <li>SQL</li>
+          </ul>
+          <h5 class="headline">Responsibilities</h5>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+          <a class="secondary-button" href="#">GIT Repo</a>
+        </div>
+        <div class="software-item">
+          <img src="img/airbnb-app.png" alt="tracker marketing page" />
+          <a href="#"><h4 class="title-2">Airbnb Optimal Price</h4></a>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+          <h5 class="headline">Tech Stack</h5>
+          <ul class="grey-font">
+            <li>React</li>
+            <li>Redux</li>
+            <li>Express</li>
+            <li>SQL</li>
+          </ul>
+          <h5 class="headline">Responsibilities</h5>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+          <a class="secondary-button" href="#">GIT Repo</a>
+        </div>
+        <div class="software-item">
+          <img src="img/lambda_bug_tracker.png" alt="tracker marketing page" />
+          <a href="#"><h4 class="title-2">Bug Tracker</h4></a>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+          <h5 class="headline">Tech Stack</h5>
+          <ul class="grey-font">
+            <li>React</li>
+            <li>Redux</li>
+            <li>Express</li>
+            <li>SQL</li>
+          </ul>
+          <h5 class="headline">Responsibilities</h5>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+          <a class="secondary-button" href="#">GIT Repo</a>
+        </div>
+        <div class="software-item">
+          <img src="img/mission_control.png" alt="tracker marketing page" />
+          <a href="#"><h4 class="title-2">Mission Control</h4></a>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+          <h5 class="headline">Tech Stack</h5>
+          <ul class="grey-font">
+            <li>React</li>
+            <li>Redux</li>
+            <li>Express</li>
+            <li>SQL</li>
+          </ul>
+          <h5 class="headline">Responsibilities</h5>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+          <a class="secondary-button" href="#">GIT Repo</a>
+        </div>
       </div>
     </section>
     <section id="hardware">
       <h3 class="subhead">HARDWARE</h3>
-      <h2 class="title-1">See what started my passion for tech.</h2>
-      <div class="hardware-item">
-        <img src="img/tracker-showcase.png" alt="tracker marketing page" />
-        <a href="#"><h4 class="title-2">Receipt Tracker</h4></a>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
-      </div>
-      <div class="hardware-item">
-        <img src="img/tracker-showcase.png" alt="tracker marketing page" />
-        <a href="#"><h4 class="title-2">Receipt Tracker</h4></a>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
-      </div>
-      <div class="hardware-item">
-        <img src="img/tracker-showcase.png" alt="tracker marketing page" />
-        <a href="#"><h4 class="title-2">Receipt Tracker</h4></a>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+      <h2 class="title-1">
+        See what started my <br />
+        passion for tech.
+      </h2>
+      <div class="flex-container">
+        <div class="hardware-item">
+          <img src="img/setup_frank.png" alt="tracker marketing page" />
+          <a href="#"><h4 class="title-2">Custom Computers</h4></a>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+        </div>
+        <div class="hardware-item">
+          <img src="img/drone.png" alt="tracker marketing page" />
+          <a href="#"><h4 class="title-2">Racing Drones</h4></a>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+        </div>
+        <div class="hardware-item">
+          <img src="img/arduino.png" alt="tracker marketing page" />
+          <a href="#"><h4 class="title-2">LED Music Visualizer</h4></a>
+          <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aliquet semper ipsum sagittis.</p>
+        </div>
       </div>
     </section>
     <section id="work">
       <h3 class="subhead">WORK</h3>
-      <h2 class="title-1">Places I’ve worked in the past.</h2>
-      <div class="work-item">
-        <img src="img/nyit_logo.png" alt="nyit logo" />
-        <h5 class="headline"><span class="nyit-font">NYIT</span>, Researcher</h5>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus vestibulum ac viverra euismod sodales.</p>
-      </div>
-      <div class="work-item">
-        <img src="img/ub_logo.png" alt="ub logo" />
-        <h5 class="headline"><span class="ub-font">UB</span>, Career Services</h5>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus vestibulum ac viverra euismod sodales.</p>
-      </div>
-      <div class="work-item">
-        <img src="img/lambda_logo.png" alt="lambda logo" />
-        <h5 class="headline"><span class="lambda-font">Lambda</span>, Team lead</h5>
-        <p class="body-text grey-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus vestibulum ac viverra euismod sodales.</p>
+      <h2 class="title-1">
+        Places I’ve worked in <br />
+        the past.
+      </h2>
+      <div class="flex-container">
+        <div class="work-item">
+          <img src="img/nyit_logo.png" alt="nyit logo" />
+          <h5 class="headline"><span class="nyit-font">NYIT</span>, Researcher</h5>
+          <p class="body-text grey-font">I was leader for research on autonomous drones and provided the team with a foundation to build onto.</p>
+        </div>
+        <div class="work-item">
+          <img src="img/ub_logo.png" alt="ub logo" />
+          <h5 class="headline"><span class="ub-font">UB</span>, Career Services</h5>
+          <p class="body-text grey-font">I was responsible for hosting info sessions for employers and also providing students with opportunities.</p>
+        </div>
+        <div class="work-item">
+          <img src="img/lambda_logo.png" alt="lambda logo" />
+          <h5 class="headline"><span class="lambda-font">Lambda</span>, Team lead</h5>
+          <p class="body-text grey-font">I collaborated with students to ensure code reviews and coordinated additional support for students via escalations.</p>
+        </div>
       </div>
     </section>
     <section id="endeavors">
       <h3 class="subhead">ENDEAVORS</h3>
-      <h2 class="title-1">A few goals I’ve set for myself.</h2>
+      <h2 class="title-1">
+        A few goals I’ve set <br />
+        for myself.
+      </h2>
       <ul class="grey-font">
         <li>Node.js</li>
         <li>RESTful / GraphQL APIs</li>

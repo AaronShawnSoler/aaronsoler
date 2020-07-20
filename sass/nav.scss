@@ -2,6 +2,8 @@ nav {
   display: flex;
   align-items: center;
   padding: 0 16px;
+  max-width: 640px;
+  margin: 0 auto;
 
   button {
     margin-left: auto;

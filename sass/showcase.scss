@@ -1,6 +1,7 @@
 .software-item,
 .hardware-item {
-  margin: 64px 0;
+  margin-bottom: 64px;
+  width: 288px;
   img {
     width: 214px;
     height: auto;
@@ -21,6 +22,21 @@
     &:last-child {
       margin: 0;
     }
+  }
+}
+
+.software-item:nth-child(1),
+.software-item:nth-child(3),
+.hardware-item:nth-child(1),
+.hardware-item:nth-child(3) {
+  @media (min-width: 500px) {
+    margin-right: 32px;
+  }
+}
+
+.software-item:nth-child(3) {
+  @media (min-width: 500px) {
+    margin-bottom: 0;
   }
 }
 

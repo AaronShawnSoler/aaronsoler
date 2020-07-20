@@ -1,15 +1,20 @@
 header {
   padding: 0 16px;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: -66px;
+  margin-top: -66px - 16px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url("../img/pc_setup.jpg");
   background-size: cover;
   background-position: center;
 
   h1 {
     margin: 16px 0;
+  }
+
+  div {
+    max-width: 640px - 32px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
