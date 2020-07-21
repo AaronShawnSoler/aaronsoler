@@ -1,24 +1,27 @@
 
 let width = window.innerWidth
-let navBtn = document.querySelectorAll('nav button')
-let mobileNav = document.querySelector('.mobile-nav')
-let links = document.querySelectorAll('.mobile-nav a')
+let mobileNav = document.querySelector('nav button')
+let mobileMenu = document.querySelector('.mobile-nav')
+let exit = document.querySelector('.mobile-nav button')
+let navBtn = document.querySelectorAll('.mobile-nav a')
 
-console.log(links)
+mobileNav.addEventListener("click", () => {
+    mobileMenu.classList.remove('display-none')
+})
 
-navBtn.forEach(btn => btn.addEventListener("click", () => {
-    mobileNav.classList.toggle('display-none')
-}))
+exit.addEventListener("click", () => {
+    mobileMenu.classList.add('display-none')
+})
 
 window.addEventListener("resize", () => {
     width = window.innerWidth
-    if (width > 767) {
-        mobileNav.classList.add('display-none')
+    if (width > 700) {
+        mobileMenu.classList.add('display-none')
     }
 })
 
-links.forEach(link => {
-    link.addEventListener("click", () => {
-        mobileNav.classList.add('display-none')
+navBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        mobileMenu.classList.add('display-none')
     })
 })

@@ -16,7 +16,26 @@
   <body>
     <nav>
       <h2 class="title-1">Portfolio</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#endeavor">Endeavors</a></li>
+      </ul>
       <button><ion-icon name="menu-outline"></ion-icon></button>
+      <div class="mobile-nav display-none">
+        <button><ion-icon name="close-outline"></ion-icon></button>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#software">Software</a></li>
+          <li><a href="#hardware">Hardware</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#endeavor">Endeavors</a></li>
+        </ul>
+      </div>
     </nav>
     <header>
       <div>
@@ -243,12 +262,13 @@
         <li>SQL Queries</li>
       </ul>
     </section>
-    <footer>
+    <footer id="endeavor">
       <p class="grey-font footnote">
         Copyright © 2020 <br />
         Designed & Developed by Aaron Soler
       </p>
     </footer>
+    <script src="js/nav.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>
