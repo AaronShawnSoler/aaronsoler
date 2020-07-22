@@ -175,6 +175,9 @@ nav {
   margin: 0 auto;
   height: 66px;
 }
+nav .display-none {
+  display: none;
+}
 nav button {
   margin-left: auto;
   width: 66px;
@@ -225,10 +228,6 @@ nav .mobile-nav ul {
 nav .mobile-nav ul a {
   display: inline-block;
   padding: 16px;
-}
-
-.display-none {
-  display: none;
 }
 
 header {
@@ -334,8 +333,8 @@ header div {
 }
 .software-item img,
 .hardware-item img {
-  width: 214px;
-  height: auto;
+  width: auto;
+  height: 285px;
 }
 .software-item h4,
 .hardware-item h4 {

@@ -5,6 +5,8 @@ let mobileMenu = document.querySelector('.mobile-nav')
 let exit = document.querySelector('.mobile-nav button')
 let navBtn = document.querySelectorAll('.mobile-nav a')
 
+
+
 mobileNav.addEventListener("click", () => {
     mobileMenu.classList.remove('display-none')
 })

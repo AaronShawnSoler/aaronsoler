@@ -6,6 +6,10 @@ nav {
   margin: 0 auto;
   height: 66px;
 
+  .display-none {
+    display: none;
+  }
+
   button {
     margin-left: auto;
     width: 66px;
@@ -61,8 +65,4 @@ nav {
       }
     }
   }
-}
-
-.display-none {
-  display: none;
 }
