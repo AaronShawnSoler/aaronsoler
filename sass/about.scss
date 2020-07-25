@@ -64,9 +64,11 @@
     }
 
     &:first-child {
-      ion-icon:first-child {
-        @media (min-width: 442px) {
-          margin-left: 0;
+      a:first-child {
+        ion-icon:first-child {
+          @media (min-width: 442px) {
+            margin-left: 0;
+          }
         }
       }
     }

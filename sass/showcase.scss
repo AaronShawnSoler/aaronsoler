@@ -35,8 +35,10 @@
 }
 
 .software-item:nth-child(3) {
-  @media (min-width: 500px) {
-    margin-bottom: 0;
+  @media (min-width: 640px) {
+    ul {
+      margin-bottom: 76px;
+    }
   }
 }
 
